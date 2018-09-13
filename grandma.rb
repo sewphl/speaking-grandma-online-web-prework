@@ -1,5 +1,6 @@
 def speak_to_grandma(stuff)
-  if /[[:lower:]]/.match(stuff)
+  ##if /[[:lower:]]/.match(stuff)
+  if stuff == stuff.downcase
     return "HUH?! SPEAK UP, SONNY!"
   elsif stuff == "I LOVE YOU GRANDMA!"
     return "I LOVE YOU TOO PUMPKIN!"
