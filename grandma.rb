@@ -3,7 +3,7 @@ def speak_to_grandma(stuff)
     return "HUH?! SPEAK UP, SONNY!"
   elsif stuff == "I LOVE YOU GRANDMA!"
     return "I LOVE YOU TOO PUMPKIN!"
-  else
+  elsif /[[:upper:]]/.match(stuff)
     return "NO, NOT SINCE 1938!"
 end
 # Write a speak_to_grandma method.
